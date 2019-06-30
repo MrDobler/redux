@@ -6,13 +6,9 @@ import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
 import Post from './components/Post';
+import AddPost from './components/AddPost';
 
 class App extends Component {
-   
-    state = {
-        
-    };
-
 
     render() {
         return (
@@ -23,7 +19,8 @@ class App extends Component {
                         <Route exact path="/" component={Home} />
                         <Route path="/about" component={About} />
                         <Route path="/contact" component={Contact} /> 
-                        <Route path="/:post_id" component={Post}/>
+                        <Route exact path="/add" component={AddPost}/>
+                        <Route exact path="/:post_id" component={Post}/>
                     </Switch>
                 </div>
             </BrowserRouter>

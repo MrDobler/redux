@@ -1,51 +1,61 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
 
-import Axios from 'axios';
+import { getPost } from '../actions/postActions';
+
 import Pokeball from '../pokeball.png';
 
 class Home extends Component {
     
-    state = {
-        posts: []
-    }
-    
-    componentDidMount() {
-        Axios.get('https://jsonplaceholder.typicode.com/posts')
-            .then(res => {
-                this.setState({
-                    posts: res.data.slice(0, 10)
-                })
-            })
-            .catch(err => console.log(err));
-    }
+    handleSubmit = (e) => {
+        e.preventDefault();
+        let search = this.getSearch.value;
+        this.props.getPost(search);
+    };
     
     render() {
-        const { posts } = this.state;
-        const postList = posts.length ? (
+        let { posts } = this.props;
+
+        let postList = posts.length ? (
             posts.map(({id, title, body}) => {
-                return (
-                    <div className="post card" key={id}>
-                        <img src={Pokeball} alt="Pokeball"/>
-                        <div className="card-content">
-                            <Link to={`/${id}`}><span className="card-title red-text">{title}</span></Link>
-                            <p>{body}</p>
+                    return (
+                        <div className="post card" key={id}>
+                            <img src={Pokeball} alt="Pokeball"/>
+                            <div className="card-content">
+                                <Link to={`/${+id}`}><span className="card-title red-text">{title}</span></Link>
+                                <p>{body}</p>
+                            </div>
                         </div>
-                    </div>
-                )
-            }
+                    );
+                }
             )
         ) : (
-         <div className="center">No posts pageYOffset.</div>   
+         <div className="center">No posts yet.</div>   
         );
 
         return (
             <div className="container home">
                 <h4 className="center">Home</h4>
+                <Link to="/add"><button className="btn red">New Post</button></Link>
+                <form onSubmit={this.handleSubmit}>
+                    <div className="input-field col s12">
+                        <input type="text" ref={(input) => this.getSearch = input} placeholder="Search Title & Enter"/>
+                    </div>
+                </form>
                 {postList}
             </div>
         );
     }
 }
 
-export default Home;
+
+const mapStateToProps = (state) => ({ posts: state.posts, search: state.search });
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        getPost: (title) => dispatch(getPost(title))
+    };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Home);
