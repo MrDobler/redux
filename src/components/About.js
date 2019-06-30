@@ -1,0 +1,34 @@
+import React from 'react';
+
+import Rainbow from '../components/hoc/Rainbow';
+
+const About = () => {
+    return (
+        <div className="container">
+            <h4 className="center">About</h4>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed ex viverra nisl iaculis imperdiet. Pellentesque aliquam enim lorem, in lobortis risus consequat ac. Etiam sed dolor odio. In in massa enim. Sed at metus aliquam, dictum neque vitae, vehicula libero. Donec suscipit, lacus a interdum porta, ipsum erat tristique turpis, ut dictum magna mauris suscipit dolor. Maecenas mollis volutpat rutrum. In finibus ac est non varius.
+    
+                Aenean et placerat libero, sed elementum erat. Praesent porttitor quam vitae nibh ultrices, vitae porta mi imperdiet. Phasellus quis tellus volutpat, tincidunt mi ac, feugiat dolor. Donec iaculis bibendum tortor, ut venenatis leo elementum a. Sed tortor lorem, porttitor sit amet magna at, semper faucibus sem. Nunc dignissim ullamcorper velit id gravida. Etiam sed dapibus odio. Donec euismod urna quis nibh hendrerit venenatis. Donec sed libero pretium, sagittis enim vitae, volutpat dui. Ut tincidunt purus a ligula consectetur tincidunt. Aliquam vel ante quis nibh gravida venenatis. Donec eget nisi sed tellus tincidunt venenatis. Integer non ante eget nibh ornare vestibulum vel eu diam.
+                
+                Sed nec lacus sodales, volutpat lectus id, semper orci. Curabitur non velit eget nunc blandit sollicitudin in nec libero. Fusce lobortis nibh sit amet ante venenatis feugiat non et ligula. Quisque vel velit eros. Aenean nec facilisis libero, eu iaculis turpis. Proin tempus magna ipsum, in consequat lectus cursus ac. Proin eget turpis magna. Pellentesque volutpat maximus posuere. Aenean lobortis congue lorem malesuada gravida. Pellentesque ac eros aliquet, efficitur purus sit amet, molestie ligula. Proin nec sem eu diam congue ultricies eu eget mi. Phasellus quis turpis finibus diam porta pretium. Nunc sodales consectetur ligula ut eleifend. Etiam leo leo, hendrerit eu massa sed, convallis volutpat tellus. Duis nec semper lorem. Sed elementum ornare dui, in sollicitudin nisi luctus vitae.
+                
+                Pellentesque cursus, odio id fermentum lobortis, nisi purus pulvinar turpis, a rhoncus mauris nisl quis ante. Maecenas scelerisque facilisis ullamcorper. Nunc massa ex, mollis non ex at, dictum suscipit diam. Aenean consequat quam quis lectus feugiat cursus. Vestibulum lobortis scelerisque diam tincidunt vulputate. In hac habitasse platea dictumst. Etiam bibendum varius ultrices. Etiam a erat faucibus, sollicitudin mauris tristique, suscipit justo. Nulla pellentesque vestibulum vehicula. Nunc dapibus urna quis ex convallis, eget pretium sapien dapibus.
+                
+                In quis libero libero. Donec pharetra egestas elementum. Mauris ultrices condimentum dapibus. Nam egestas augue at dapibus fringilla. Mauris libero ipsum, luctus eget lacus ut, sodales tincidunt libero. Mauris bibendum dolor non fermentum tempor. Donec eget congue quam. Maecenas imperdiet at erat in aliquam. Fusce dapibus bibendum tellus, ac pretium ipsum euismod non. Etiam id nibh aliquet elit tincidunt pharetra. Etiam aliquam sodales tristique. Maecenas orci mi, mattis vel ullamcorper non, eleifend sed urna.
+                
+                Phasellus condimentum quis lacus rutrum efficitur. Nulla et erat ut nisl rhoncus vestibulum. Phasellus finibus nulla non dolor posuere aliquam. Phasellus ut ex id nisi consectetur imperdiet. Praesent maximus dolor quis ante pharetra aliquam. Etiam quis nisi congue, ornare ipsum in, pretium eros. Cras sed mollis ante. Ut dictum, magna et viverra tincidunt, justo sapien cursus mauris, ac pellentesque sem justo et mi. Curabitur elementum lacus eu libero dignissim bibendum. Nulla cursus feugiat massa vitae mattis.
+                
+                Nam tristique tempus sodales. Nunc vehicula lacus a maximus volutpat. Ut quis venenatis tellus, vitae euismod orci. Ut id neque a ex aliquam tincidunt. Nullam elementum massa eu mattis porttitor. Curabitur dapibus sodales orci, sed iaculis justo bibendum eget. Aliquam odio turpis, mollis ut sollicitudin pulvinar, gravida eu eros. Vivamus imperdiet quam a viverra hendrerit. Nunc quis ipsum eget ipsum pellentesque placerat quis pellentesque ipsum.
+                
+                Nam eu consequat lorem, sed ultrices lacus. Donec ut laoreet felis, nec gravida dolor. Integer sit amet nisl nec justo accumsan lacinia. Praesent a tempor lorem. Phasellus tempus ligula vel posuere ullamcorper. Aenean condimentum eros dui, ut efficitur nibh sagittis lacinia. Mauris bibendum laoreet metus, ut eleifend ante laoreet nec. Praesent posuere efficitur dui a fermentum. Etiam varius pulvinar erat, a ultricies dui suscipit vitae. Praesent dapibus commodo placerat. Fusce id est ac nibh condimentum tempus. Curabitur quis facilisis leo. Ut condimentum elementum placerat. Quisque justo purus, consectetur vitae odio sit amet, consectetur convallis velit. Vestibulum auctor lectus in ante cursus tincidunt.
+                
+                Nunc blandit sit amet libero at scelerisque. Aliquam a lacus sit amet nibh sodales feugiat in tristique urna. Etiam vel elit bibendum, fermentum justo ac, aliquam odio. Integer pretium mauris felis, eu euismod purus gravida vel. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris sed magna eu libero pellentesque ultricies. Curabitur vitae posuere nulla. Quisque tincidunt diam non magna sagittis congue. Praesent eget facilisis nisl. Ut aliquet, massa eu luctus efficitur, augue elit pharetra urna, at tempor arcu justo ut ligula. Nullam convallis velit eget mi volutpat, in hendrerit arcu cursus.
+                
+                Aenean malesuada enim in elit posuere dictum. Ut vel felis ut lectus consectetur aliquet non in dolor. Sed rutrum vestibulum nisi eget bibendum. Duis accumsan nisl ac nisl pulvinar eleifend. Curabitur tincidunt faucibus sapien, eget fringilla ligula laoreet ac. Cras porttitor, urna et suscipit molestie, ipsum arcu scelerisque est, nec blandit metus nunc eget metus. Proin et est sit amet magna pellentesque fermentum. Aliquam mauris diam, molestie at libero id, molestie iaculis velit. Nam eu orci sed lectus tincidunt rhoncus. Mauris iaculis orci non nibh ullamcorper, eget finibus magna pellentesque. Duis sit amet quam justo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent porttitor, leo non maximus tincidunt, ipsum nisi mollis lectus, sed euismod nunc nunc in nulla.
+            </p>
+        </div>
+    );
+}
+
+export default Rainbow(About);
