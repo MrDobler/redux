@@ -15,10 +15,10 @@ class Home extends Component {
     };
     
     render() {
-        let { posts } = this.props;
-
-        let postList = posts.length ? (
-            posts.map(({id, title, body}) => {
+        let { posts, search } = this.props;
+        let postsArr = search.length > 0 ? search : posts;
+        let postList = postsArr.length ? (
+            postsArr.map(({id, title, body}) => {
                     return (
                         <div className="post card" key={id}>
                             <img src={Pokeball} alt="Pokeball"/>
